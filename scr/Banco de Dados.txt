@@ -1,0 +1,14 @@
+CREATE DATABASE dadosPessoas;
+USE dadosPessoas;
+
+CREATE TABLE `pessoa` (
+    `idPessoa` INT NOT NULL AUTO_INCREMENT,	
+    `nomePessoa` VARCHAR(55) NOT NULL,
+    `idadePessoa` INT NOT NULL,
+    PRIMARY KEY (`idPessoa`)
+);
+
+INSERT INTO pessoa (nomePessoa, idadePessoa) 
+	VALUES ('Jonata Salgado Lobo',22),('Emanuel Bicudo Saltão',53),('Lamarana Vilaverde Valadim',56),
+           ('Humberto Alcaide Maciel',57),('Damian Cunha Varejão',39),('Rosário Gonçalves Benevides',31),
+           ('Liara Sabala Barrela',28),('Jana Morão Raminhos',18),('Ivan Coimbra Barroca',80),('Elisete Estrada Filipe',26);
